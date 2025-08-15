@@ -8,9 +8,9 @@ git fetch origin
 git reset --hard origin/main
 
 echo "Building new images..."
-docker-compose -f docker-compose.prod.yml up build
+docker compose -f docker-compose.prod.yml up build
 
 echo "Deploying with rolling updates.."
-docker-compose -f docker-compose.prod.yml up -d --no-dep --build
+docker compose -f docker-compose.prod.yml up -d --no-dep --build
 
 echo "Deployment Successful!"
