@@ -14,6 +14,10 @@ app = FastAPI(
 
 app.include_router(users_router)
 
+@app.get("/health")
+def health():
+    return {"status": "ok after CI/CD"}
+
 @app.get("/scalar")
 def get_scalar():
     return get_scalar_api_reference(
