@@ -2,7 +2,7 @@
 
 set -e
 
-cd "$(dirname "$0")/../app"
+cd "$(dirname "$0")/.."
 echo "Updating code..."
 git fetch origin
 git reset --hard origin/main
