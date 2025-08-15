@@ -2,7 +2,7 @@
 
 set -e
 
-cd /Users/ruxxcon/dev/learn-python/auth-learning/auth-testing/app
+cd "$(dirname "$0")/../app"
 echo "Updating code..."
 git fetch origin
 git reset --hard origin/main
