@@ -12,6 +12,6 @@ docker compose -f docker-compose.prod.yml build
 
 
 echo "Deploying with rolling updates.."
-docker compose -f docker-compose.prod.yml up -d --no-dep --build
+docker compose -f docker-compose.prod.yml up -d --build app
 
 echo "Deployment Successful!"
